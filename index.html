@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">Profile</a>
+        <nav class="site-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#favorites">Favorites</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">HELLO, I'M</p>
+            <h1>
+              山田 太郎
+              <span class="accent-text">Creative Web Learner</span>
+            </h1>
+            <p class="lead">
+              デザインとコーディングの両方を楽しみながら、
+              見る人に伝わるWeb体験を作ることを目指しています。
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contact">連絡する</a>
+              <a class="button button-secondary" href="#about">もっと見る</a>
+            </div>
+            <div class="status-card">
+              <span class="status-label">Now Learning</span>
+              <strong id="rotating-text">HTML / CSS</strong>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="portrait-card">
+              <div class="portrait-glow"></div>
+              <div class="portrait-circle">
+                <span>YT</span>
+              </div>
+              <div class="floating-note note-top">UI / UX</div>
+              <div class="floating-note note-bottom">JavaScript</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="info-grid" id="about">
+          <article class="panel intro-panel">
+            <p class="section-label">About Me</p>
+            <h2>自分らしい表現を大切にしています</h2>
+            <p>
+              はじめまして。山田太郎です。新しいことを学ぶのが好きで、
+              特にWeb制作では「見やすさ」と「楽しさ」の両立を意識しています。
+            </p>
+            <p>
+              小さな工夫で印象が変わるところに面白さを感じていて、
+              レイアウト、色使い、動きのある演出を少しずつ研究中です。
+            </p>
+          </article>
+
+          <aside class="panel profile-panel">
+            <p class="section-label">Profile</p>
+            <ul class="profile-list">
+              <li><span>名前</span><strong>山田 太郎</strong></li>
+              <li><span>出身</span><strong>Tokyo, Japan</strong></li>
+              <li><span>目標</span><strong>人の心に残るサイト作り</strong></li>
+              <li><span>興味</span><strong>Web制作 / デザイン / 写真</strong></li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="panel skills-panel" id="skills">
+          <div class="section-heading">
+            <p class="section-label">Skills</p>
+            <h2>できること・学んでいること</h2>
+          </div>
+          <div class="skill-cards">
+            <article class="skill-card">
+              <h3>HTML</h3>
+              <p>意味のある構造を意識しながら、読みやすいマークアップを学習中です。</p>
+            </article>
+            <article class="skill-card">
+              <h3>CSS</h3>
+              <p>配色や余白、アニメーションを使って印象的な画面づくりを楽しんでいます。</p>
+            </article>
+            <article class="skill-card">
+              <h3>JavaScript</h3>
+              <p>クリックや表示切り替えなど、ページに動きを加える実装に挑戦しています。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="favorites-section" id="favorites">
+          <div class="section-heading">
+            <p class="section-label">Favorites</p>
+            <h2>好きなこと</h2>
+          </div>
+          <div class="favorites-grid">
+            <article class="panel favorite-card">
+              <span class="favorite-number">01</span>
+              <h3>写真を撮ること</h3>
+              <p>街の光や空の色など、日常の中にあるきれいな瞬間を切り取るのが好きです。</p>
+            </article>
+            <article class="panel favorite-card">
+              <span class="favorite-number">02</span>
+              <h3>カフェ巡り</h3>
+              <p>落ち着く空間でアイデアを考えたり、勉強したりする時間を大切にしています。</p>
+            </article>
+            <article class="panel favorite-card">
+              <span class="favorite-number">03</span>
+              <h3>ものづくり</h3>
+              <p>少しずつ形にしていく過程が好きで、試しながら改善するのが得意です。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel contact-panel" id="contact">
+          <div class="section-heading">
+            <p class="section-label">Contact</p>
+            <h2>気軽に声をかけてください</h2>
+          </div>
+          <p class="contact-text">
+            ポートフォリオ制作や学習仲間との交流など、Webに関するつながりを広げたいと思っています。
+          </p>
+          <div class="contact-links">
+            <a href="mailto:hello@example.com">hello@example.com</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://x.com/" target="_blank" rel="noreferrer">X / Twitter</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Taro Yamada</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
